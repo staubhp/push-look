@@ -54,3 +54,4 @@ if __name__ == "__main__":
 #TODO: create logging
 #TODO: think of program flow. run search in infinite loop, pull from a list of keywords
         #provided as main input
+
