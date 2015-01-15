@@ -32,7 +32,7 @@ def downloadCommitFiles(commit):
                 print("Downloading " + commitFiles[i].raw_url)
                 filename = 'downloads/' + str(uuid.uuid4()) + ".txt"
                 urlretrieve(commitFiles[i].raw_url, filename, reporthook)
-                if (i>1):#TODO: parameteriz
+                if (i>1):#TODO: parameterize
                         break
 
 def search(searchTerm):
@@ -75,7 +75,7 @@ def main(args):
 
 if __name__ == "__main__":        
         ghub = Github()
-        #TODO: take search terms and repo freshness as args
+        #TODO: take search terms, repo freshness, commit file limit and repo limit as args
         if (len(sys.argv) > 1):
                 main(sys.argv)
         else:
